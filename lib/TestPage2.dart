@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/TestPage3.dart';
 
 class TestPage2 extends StatelessWidget {
   @override
@@ -12,12 +11,7 @@ class TestPage2 extends StatelessWidget {
         child: Column(
           children: [
             TextButton(
-              onPressed: () => {
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) {
-                  return TestPage3();
-                }))
-              },
+              onPressed: () => {Navigator.of(context).pushNamed('/test3')},
               child: Text(
                 "進む",
                 style: TextStyle(fontSize: 80),
